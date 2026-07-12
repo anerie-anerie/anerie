@@ -1,0 +1,167 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: scroll;
+  overflow-y: auto;
+}
+
+.projectBg {
+  background-image: url("../img/projects_bg.png");
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  position: relative;
+}
+
+.laptop {
+  background-image: url("../img/laptop.png");
+  position: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  width: 450px;
+  bottom: 30px;
+  right: 600px;
+  position: absolute;
+}
+
+.art {
+  background-image: url("../img/art.png");
+  position: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 320px;
+  width: 450px;
+  bottom: 30px;
+  right: 150px;
+  position: absolute;
+}
+
+.breadboard {
+  background-image: url("../img/breadboard.png");
+  position: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 220px;
+  width: 450px;
+  bottom: 30px;
+  right: 1000px;
+  position: absolute;
+}
+
+
+/* 1. Add a trans */
+.laptop, .art, .breadboard {
+  transition: transform 0.3s ease; 
+}
+
+/* 2. Scale them up slightly on hover */
+.laptop:hover, .art:hover, .breadboard:hover {
+  transform: scale(1.05);
+  cursor: pointer;     
+}
+
+
+
+.projectContainer {
+  display: flex;
+  gap: 20px;
+  width: 93vw;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.project {
+  flex: 0 0 auto; /* don't stretch */
+  min-width: 0;
+  height: 500px;
+  width: 350px;
+  padding: 20px;   
+  background: rgba(255,255,255,.08);
+  border-radius: 12px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+
+.projectTitle {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Description text */
+.projectDescription {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Skills (tags) */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.skill {
+  background-color: #ffffff22;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+}
+
+.projectButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;          /* space between buttons */
+  margin-top: 20px;
+  align-items: center; /* or flex-start if you want them left-aligned */
+}
+
+.projectLink {
+  display: block;
+  width: 180px;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  background: #4b4b8f;
+  color: white;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.projectLink:hover {
+  background: #5d5da8;
+}
+
+@media (max-width: 1360px) {
+  html, body {
+    overflow-x: auto;   /* horizontal scroll allowed */
+    overflow-y: auto;   /* vertical scroll stays */
+  }
+
+  .projectBg {
+    width: 1600px; /* make the container twice as wide as viewport */
+    background-size: 100% auto;
+    min-height: 100vh;
+    background-color: #0A005B;
+
+  }
+
+
+}
+
+
+
+
