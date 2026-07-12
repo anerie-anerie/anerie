@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Overlay from './Overlay'; // import your Overlay component
 import { useNavigate } from 'react-router-dom';
-import clickSoundFile from '../click.mp3';
 import './aboutMe.css';
 
 function About() {

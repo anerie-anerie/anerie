@@ -52,12 +52,6 @@ function Photobooth() {
     setPhotos([]);
   };
 
-  const goHome = () => {
-    if (streamRef.current) {
-      streamRef.current.getTracks().forEach((track) => track.stop());
-    }
-    navigate('/');
-  };
 
   function roundRect(ctx, x, y, width, height, radius) {
     ctx.beginPath();
