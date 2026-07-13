@@ -6,7 +6,6 @@ import memeDream from "../img/memeDream.png";
 import lunarhacks from "../img/lunarhacks.png";
 import ironWill from "../img/ironWill.png";
 import beeBeat from "../img/bee_beat.png";
-import softwareProjectsHeader from "../img/software_projects.png";
 
 function SWProjects() {
     const navigate = useNavigate();
