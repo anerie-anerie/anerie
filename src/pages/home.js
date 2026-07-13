@@ -11,6 +11,8 @@ import darkBg from '../img/mainBg.png';
 import lightBg from '../img/lightBg.png';
 import lightName from '../img/lighFullName.png';
 import darkName from "../img/anerie.png";
+import student from "../img/student_title.png";
+import lightStudent from "../img/student_light.png";
 import './home.css';
 import sunIcon from '../img/sun.png';
 import moonIcon from '../img/moon.png';
@@ -56,7 +58,11 @@ function Home() {
           backgroundImage: `url(${isLightMode ? lightName : darkName})`,
         }}
         ></div>
-
+        <img
+          className="student-image"
+          src={isLightMode ? lightStudent : student}
+          alt="first year computer engineering @ UWaterloo"
+        />
         {/* Links */}
         <div className="buttonContainer">
           <Link to="/about">

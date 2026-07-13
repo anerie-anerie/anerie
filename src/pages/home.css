@@ -63,8 +63,18 @@
   width: 80vw;
   aspect-ratio: 4 / 1; /* maintains logo shape without fixed vh height */
   pointer-events: none;
+  position: absolute;
+  top: 20vh;
 }
 
+
+.student-image {
+  width: 50vw;
+  height: auto;
+  position: absolute;
+  left: 47vw;
+  bottom: 27vh;
+}
 
 .topButtons {
   position: absolute;
