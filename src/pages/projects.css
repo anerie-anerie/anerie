@@ -11,10 +11,12 @@ html, body {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center center;
   display: flex;
   position: relative;
+  box-sizing: border-box;
 }
+
 
 .laptop {
   background-image: url("../img/laptop.png");
@@ -121,13 +123,6 @@ html, body {
   border: 1px solid var(--text-color);
 }
 
-.projectButtons {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;          /* space between buttons */
-  margin-top: 20px;
-  align-items: center; /* or flex-start if you want them left-aligned */
-}
 
 .projectLink {
   display: block;

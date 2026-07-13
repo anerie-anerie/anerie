@@ -1,0 +1,183 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  /* Plain deep dark blue/purple background color gradient */
+  .projectBg_sw {
+    background: linear-gradient(135deg, #0e065f 0%, #060235 100%);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  
+  /* Page structural wrapper */
+  .projectsPage {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 0 120px 0;
+    z-index: 2;
+  }
+  
+  /* Centered Header Image Title Asset */
+  .pageHeaderImage {
+    background-image: url("../img/software_projects.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    max-width: 600px;
+    height: 120px;
+    margin: 0 auto 50px auto;
+  }
+  
+  /* Back Button styling */
+  .backButton {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.2s ease;
+  }
+  
+  .backButton:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Card Layout: Image to the LEFT, Info to the RIGHT */
+  .projectSection {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 24px;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  
+  .projectImage {
+    flex: 1;
+  }
+  
+  .projectImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .projectInfo {
+    flex: 1.3;
+  }
+  
+  /* Typography styles */
+  .projectTitle {
+    font-size: 2rem;
+    margin: 0 0 6px 0;
+    font-weight: bold;
+  }
+  
+  .projectDate {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 0 16px 0;
+  }
+  
+  .projectDescription {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  
+  /* Centered Award Pill */
+  .award {
+    background: rgba(254, 243, 199, 0.12);
+    color: #fef3c7;
+    padding: 8px 14px;
+    border-radius: 8px;
+    display: block;            /* Changed to block to allow centering via margins */
+    width: fit-content;        /* Keeps the pill snug around the text */
+    margin: 0 auto 15px auto;  /* Centers horizontally and preserves bottom gap */
+    font-weight: 500;
+    font-size: 0.9rem;
+    border: 1px solid rgba(254, 243, 199, 0.2);
+    text-align: center;
+  }
+  
+  /* Skills/Tech tags layout */
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0;
+  }
+  
+  .skill {
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Centered Horizontal alignment for action links */
+  .projectButtons {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;  
+    gap: 18px;           
+    margin-top: 22px;
+    justify-content: center; /* Centers buttons horizontally */
+    align-items: center; 
+  }
+  
+  .projectLink {
+    display: inline-block;
+    width: 110px;            /* Fixed width so buttons look uniform side-by-side */   
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    background: #4b4b8f;
+    color: white;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  .projectLink:hover {
+    background: #5d5da8;
+    transform: translateY(-2px);
+  }
+  
+  /* Small Screen Layout Restructuring */
+  @media (max-width: 850px) {
+    .projectSection {
+      flex-direction: column;
+      padding: 24px;
+      gap: 30px;
+    }
+  }

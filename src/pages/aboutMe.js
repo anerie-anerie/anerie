@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Overlay from './Overlay'; // import your Overlay component
+import Overlay from '../components/Overlay'; // import your Overlay component
 import { useNavigate } from 'react-router-dom';
 import './aboutMe.css';
 
